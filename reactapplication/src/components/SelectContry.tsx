@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react'
 
+interface Country {
+  name: string
+}
+
 export default function SelectCountry()
 {
-  const [countries, setCountries] = useState([]);
+  const [countries, setCountries] = useState<Country[]>([]);
 
   useEffect(() => {
     fetch('https://restcountries.com/v3.1/all')
