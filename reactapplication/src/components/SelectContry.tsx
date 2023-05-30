@@ -11,10 +11,11 @@ export default function SelectCountry()
   });
 
   return (
-    <>
-      <div>
-        {countries}
-      </div>
-    </>
+    <div>
+      {countries.map(country => (
+        <div key={country.name}>{country.name}</div>
+        // Personnalisez le rendu du pays selon vos besoins
+      ))}
+    </div>
   )
 }
