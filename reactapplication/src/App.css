@@ -1,0 +1,24 @@
+.main-nav {
+  background-color: red;
+}
+
+.nav-element {
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-text {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-img {
+  width: 50px;
+  height: 50px;
+}
