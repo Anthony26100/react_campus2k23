@@ -13,6 +13,9 @@ function App() {
         </div>
         <div className='tags'>
           <h2 className='title-h2'>TAGS COUNTRY'S</h2>
+          <div className='tags-box'>
+            ok
+          </div>
         </div>
       </div>
 

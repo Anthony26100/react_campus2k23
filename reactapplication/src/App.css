@@ -58,6 +58,14 @@ label {
   width: 100%;
 }
 
+.tags-box {
+  display: flex;
+  justify-content: center;
+  margin: 5vh 0;
+  height: auto;
+  background-color: aliceblue;
+}
+
 .title-h2 {
   text-align: center;
 }
