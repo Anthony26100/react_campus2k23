@@ -15,10 +15,17 @@ interface Country {
   flag: string
 }
 
-function MainCountry()
+interface Props {
+  selectCountries: string[];
+  setSelectedCountries: React.Dispatch<React.SetStateAction<string[]>>;
+}
+
+function MainCountry(props: Props)
 {
+  const { selectCountries , setSelectedCountries } = props;
+
   const [countries, setCountries] = useState<Country[]>([]);
-  const [selectCountries, setSelectedCountries] = useState<string[]>([]);
+  
 
   useEffect(() => {
     fetch('https://restcountries.com/v3.1/all', {
@@ -54,15 +61,6 @@ function MainCountry()
         <ul className='lists'>
           {countriesLists}
         </ul>
-      <h3>Selected Countries:</h3>
-      <ul>
-        {selectCountries.map((country) => (
-          <button>
-            <li key={country}>{country}</li>
-            <span>X</span>
-          </button>
-        ))}
-      </ul>
     </div>
   )
 }
