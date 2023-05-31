@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .main-nav {
   background-color: red;
 }
@@ -9,7 +15,7 @@
   align-items: center;
 }
 
-.nav-list {
+.nav-list, .countries-list {
   list-style: none;
 }
 
@@ -21,4 +27,37 @@
 .nav-img {
   width: 50px;
   height: 50px;
+}
+
+.contenaire {
+  display: flex;
+}
+
+.countries {
+  display: flex;
+  width: auto;
+  padding: 5px;
+  background-color: red;
+}
+
+.countries-list {
+  display: flex;
+  padding: 5px;
+  background-color: green;
+}
+
+label {
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: bold;
+  gap: 15px;
+}
+
+.tags {
+  background-color: blue;
+  width: 100%;
+}
+
+.title-h2 {
+  text-align: center;
 }

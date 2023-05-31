@@ -28,7 +28,7 @@ function MainCountry()
 
   const countriesLists = countries.map((country: Country) => {
     return (
-      <li key={country.name.common}>
+      <li className='countries-list' key={country.name.common}>
         <label>
         <input type="checkbox" />
           {country.translations.fra.common}
@@ -38,7 +38,7 @@ function MainCountry()
   })
 
   return (
-    <ul>
+    <ul className='lists'>
       {countriesLists}
     </ul>
   )

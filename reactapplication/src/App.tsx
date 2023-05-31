@@ -7,7 +7,15 @@ function App() {
     <div className="App">
       <Navbar />
       <h1>CHOOSE YOUR COUNTRY'S</h1>
-      <MainCountry />
+      <div className='contenaire'>
+        <div className='countries'>
+          <MainCountry />
+        </div>
+        <div className='tags'>
+          <h2 className='title-h2'>TAGS COUNTRY'S</h2>
+        </div>
+      </div>
+
     </div>
   );
 }
